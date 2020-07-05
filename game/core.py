@@ -420,7 +420,7 @@ class TestMaster(NetworkGame):
                 Train = player.Train
                 if player.Train:
                     arr = player.Q_TABLE
-                    pickle.dump(arr, open("sample.pkl", "ab"))
+                    pickle.dump(arr, open("sample.pkl", "wb"))
                     plt.plot(self.x1, self.y1, label = "Rewards")
                     plt.plot(self.x1, self.y2, label = "Penalties")
                     plt.xlabel('Game num')
